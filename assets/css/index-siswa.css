@@ -1,0 +1,142 @@
+/* index-siswa.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+}
+
+.sidebar {
+    width: 240px;
+    background-color: #1e3a8a; /* navy blue */
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.sidebar h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 10px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #33d20f;
+}
+
+.sidebar ul li a.logout {
+    color: #f87171;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 40px;
+    flex: 1;
+}
+
+.dashboard-card {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.dashboard-card h2 {
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #1e3a8a;
+}
+
+.dashboard-card p {
+    color: #444;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Responsive (mobile) */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: 20px;
+    }
+}
+
+.poster-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.poster-card {
+    background-color: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.poster-card:hover {
+    transform: scale(1.05);
+}
+
+.poster-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.poster-caption {
+    padding: 10px 15px;
+    text-align: center;
+    font-weight: 700;
+    background-color: #f4f4f4;
+    font-size: 16px;
+    color: #333;
+    letter-spacing: 1px;
+    border-top: 1px solid #ddd;
+}
+
+
+
+

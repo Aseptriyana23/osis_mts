@@ -1,0 +1,109 @@
+/* vote.css - Styling halaman pemilihan kandidat OSIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3f4f6;
+    color: #1f2937;
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 40px;
+    color: #111827;
+}
+
+/* Container kandidat */
+.kandidat-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Kartu Kandidat */
+.kartu {
+    background-color: #ffffff;
+    border-radius: 16px;
+    padding: 25px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s;
+}
+
+.kartu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Foto Kandidat */
+.kartu img.foto-kandidat {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid black;
+    border-radius: 0px; 
+}
+
+/* Nama & info */
+.kartu h3 {
+    font-size: 20px;
+    color: #1d4ed8;
+    margin-bottom: 8px;
+}
+
+.kartu p {
+    font-size: 15px;
+    color: #4b5563;
+    margin-bottom: 10px;
+}
+
+/* Tombol Pilih */
+.kartu button {
+    background-color: #2563eb;
+    color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.kartu button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Tombol Kembali */
+.btn-kembali {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 24px;
+    background-color: #6b7280;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-kembali:hover {
+    background-color: #4b5563;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .kartu {
+        width: 100%;
+        max-width: 340px;
+    }
+}

@@ -1,0 +1,234 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+    padding: 20px;
+}
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f2f5f9;
+}
+
+/* Sidebar fixed */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #2c3e50;
+    padding: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.sidebar h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 10px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    background-color: #34495e;
+    padding: 12px 15px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    display: block;
+}
+
+.sidebar a:hover {
+    background-color: #1abc9c;
+}
+
+/* Logout khusus merah */
+.sidebar .list-group-item-danger {
+    background-color: #e74c3c;
+}
+
+.sidebar .list-group-item-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Konten utama, beri margin kiri supaya gak tertutup sidebar */
+.main-content {
+    margin-left: 250px;
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #f2f5f9;
+}
+
+/* Card dashboard */
+.dashboard-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 30px;
+}
+
+.dashboard-card h2 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Container utama */
+.table-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+}
+
+/* Judul dan tombol tambah */
+.table-wrapper h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.table-wrapper .btn {
+    display: inline-block;
+    padding: 10px 16px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+/* Warna tombol */
+.btn-primary {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: #7f8c8d;
+    color: white;
+    margin-top: 20px;
+}
+
+.btn-secondary:hover {
+    background-color: #5d6d7e;
+}
+
+.btn-warning {
+    background-color: #f1c40f;
+    color: white;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-warning:hover {
+    background-color: #d4ac0d;
+}
+
+.btn-danger {
+    background-color: #e74c3c;
+    color: white;
+    padding: 6px 10px;
+    font-size: 14px;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+}
+
+/* Tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 900px;
+}
+
+th, td {
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+thead {
+    background-color: #f1f1f1;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Kolom aksi */
+.aksi {
+    display: flex;
+    gap: 6px;
+}
+
+
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 8px 14px;
+    margin: 0 4px;
+    border-radius: 6px;
+    background-color: #ecf0f1;
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.pagination a.active {
+    background-color: #3498db;
+    color: white;
+}
+
